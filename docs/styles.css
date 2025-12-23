@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    background-color: #F7FBFC;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 100%;
+}
+
+a {
+    color: #F7FBFC;
+    text-decoration: none;
+}
+
+a:hover {
+    scale: calc(1.15);
+    color: rgb(129, 129, 129);
+}
+
+.header {
+    padding: 10px;
+    background-color: #769FCD;
+    text-align: center;
+}
+
+.nav {
+    position: relative;
+    display: inline-block;
+    margin: 0px 4%;
+}
+
+.content {
+    
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+    margin-bottom: 10px;
+}
+
+.card {
+    background-color: #B9D7EA;
+    padding: 10px 10px 5% 10px;    
+    border-radius: 15%;
+    border: 3px solid #769FCD;
+    box-shadow: 5px 5px gray;
+}
+
+.card img{
+    width: 80%;
+    border: 3px solid #769FCD;
+}
+
+.card .title {
+    color: black;
+    font-size: 125%;
+    font-weight: bold;
+    margin: 0 0 5% 0;
+}
+
+.card a {
+    background-color: rgb(21, 88, 151);
+    padding: 1% 5%;
+    border: 2px solid #769FCD;
+}
+
+.card a:hover {
+    background-color: rgb(25, 104, 179);
+}
+
+@media (max-width: 600px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
